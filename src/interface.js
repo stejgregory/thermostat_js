@@ -5,34 +5,42 @@ $(document).ready(function() {
   $('#temperature-up').on('click', function() { // event listener
     thermostat.increaseTemperature(); // update model
     updateTemperature();
+    updateBackground();
   })
 
   $('#temperature-down').click(function() { // event listener
     thermostat.decreaseTemperature(); // update model
     updateTemperature();
+    updateBackground();
   })
 
   $('#temperature-reset').click(function() {
     thermostat.resetTemperature();
     updateTemperature();
+    updateBackground();
   });
 
   $('#powersaving-on').click(function() {
     thermostat.turnPowerSavingModeOn();
     $('#power-saving-status').text('on')
     updateTemperature();
+    updateBackground();
   })
 
   $('#powersaving-off').click(function() {
     thermostat.turnPowerSavingModeOff();
     $('#power-saving-status').text('off')
     updateTemperature();
+    updateBackground();
   })
 
   function updateTemperature() {
     $('#temperature').text(thermostat.temperature);
-    $('#temperature').attr('class', thermostat.energyUsage());
   }
+
+  function updateBackground() {
+    $('#topBar').attr("class", thermostat.energyUsage());
+  };
 
   function displayWeather(city) {
     var url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city;

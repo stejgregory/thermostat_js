@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<link rel='stylesheet' href='css/interface.css'>
+<head>
+  <title>Thermostat</title>
+</head>
+<body>
+  <div class="container">
+
+    <div id="topBar" class="topDefault">
+      <div class="up">
+        <input type="image" src="imgs/whiteup.png" height="106" width="106" id="temperature-up" />
+      </div>
+      <div class="temperature">
+        <span id="temperature"></span>
+      </div>
+      <div class="down">
+        <input type="image" src="imgs/whitedown.png" height="106" width="106" id="temperature-down" />
+      </div>
+    </div>
+
+    <div id="middleBar" class="middleBar">
+      <!-- <button id="temperature-reset">reset</button> -->
+      <!-- power saving mode is <span id="power-saving-status">on</span>
+      <button id="powersaving-on">PSM on</button>
+      <button id="powersaving-off">PSM off</button> -->
+      <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+        <label class="onoffswitch-label" for="myonoffswitch">
+          <span class="onoffswitch-inner"></span>
+          <span class="onoffswitch-switch"></span>
+        </label>
+      </div>
+    </div>
+
+    <section>
+      <h1 id="temperature"></h1>
+      <h1>Current temperature <span id="display-city"></span><span>: </span><span id="current-temperature"></span></h1>
+      <form id="select-city">
+        <input id="current-city" type="text" placeholder="Enter a city"></input>
+        <input type="submit"></input>
+      </form>
+    </section>
+  </div>
+  <script src="src/thermostat.js"></script>
+  <script src="src/interface.js"></script>
+</body>
+</html>
