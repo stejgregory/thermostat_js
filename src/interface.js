@@ -27,9 +27,8 @@ $(document).ready(function() {
     updateBackground();
   })
 
-  $('#togglePowerSaving').click(function() {
+  $('#myonoffswitch').click(function() {
     thermostat.togglePowerSavingMode();
-    $('#power-saving-status').text('is it working')
     updateTemperature();
     updateBackground();
   })

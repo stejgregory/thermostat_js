@@ -1,3 +1,5 @@
+
+
 .low-usage {
   width: 100%;
   min-height: 200px;
@@ -73,6 +75,26 @@
   font-family: futura;
   font-size: 36pt;
   background-color: #AAB7B8;
+}
+
+.bottomBar {
+  min-height: 150px;
+  max-height: 65px;
+  font-family: futura;
+  font-size: 18pt;
+  color: white;
+  align: center;
+  vertical-align: top;
+  padding-top: 25px;
+  background-color: #AAB7B8;
+}
+
+h1 {
+  align: center;
+}
+
+.select-city {
+  align: center;
 }
 
 .feckingswitch {
