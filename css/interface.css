@@ -67,13 +67,25 @@
 }
 
 .middleBar {
+  align: center;
   min-height: 65px;
   max-height: 65px;
   font-family: futura;
   font-size: 36pt;
+  background-color: #AAB7B8;
+}
+
+.feckingswitch {
+  padding-top: 10px;
+  text-align: center;
+  align: center;
+  vertical-align: top;
+  width: 100%;
 }
 
 .onoffswitch {
+    margin: auto;
+    margin-bottom: 10px;
     position: relative;; width: 90px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }

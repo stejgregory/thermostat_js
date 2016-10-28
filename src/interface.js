@@ -20,11 +20,19 @@ $(document).ready(function() {
     updateBackground();
   });
 
-  $('#myonoffswitch').click(function() {
-  thermostat.togglePowerSavingMode();
-  updateTemperature();
-  updateBackground();
-})
+  $('#powersaving-off').click(function() {
+    thermostat.turnPowerSavingModeOff();
+    $('#power-saving-status').text('off')
+    updateTemperature();
+    updateBackground();
+  })
+
+  $('#togglePowerSaving').click(function() {
+    thermostat.togglePowerSavingMode();
+    $('#power-saving-status').text('is it working')
+    updateTemperature();
+    updateBackground();
+  })
 
   function updateTemperature() {
     $('#temperature').text(thermostat.temperature);
