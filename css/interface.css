@@ -1,0 +1,154 @@
+
+
+.low-usage {
+  width: 100%;
+  min-height: 200px;
+  max-height: 200px;
+  margin: 0px auto;
+  background-color: #52BE80;
+}
+
+.medium-usage {
+  width: 100%;
+  min-height: 200px;
+  max-height: 200px;
+  margin: 0px auto;
+  background-color: #AAB7B8;
+}
+
+.high-usage {
+  width: 100%;
+  min-height: 200px;
+  max-height: 200px;
+  margin: 0px auto;
+  background-color: #EC7063;
+}
+
+.container {
+  position: relative;
+}
+
+.topDefault{
+  width: 100%;
+  min-height: 200px;
+  max-height: 200px;
+  margin: 0px auto;
+  background-color: #AAB7B8;
+}
+
+.up {
+  display: inline-block;
+  padding-top: 48px;
+  vertical-align: top;
+  min-height: inherit;
+  text-align: right;
+  background-color: transparent;
+  width: 33%;
+}
+
+.temperature {
+  display: inline-block;
+  vertical-align: top;
+  min-height: inherit;
+  text-align: center;
+  font-size: 106pt;
+  font-family: futura;
+  background-color: transparent;
+  color: white;
+  width: 33%;
+}
+
+.down {
+  display: inline-block;
+  padding-top: 48px;
+  vertical-align: top;
+  min-height: inherit;
+  text-align: left;
+  background-color: transparent;
+  width: 33%;
+}
+
+.middleBar {
+  align: center;
+  min-height: 65px;
+  max-height: 65px;
+  font-family: futura;
+  font-size: 36pt;
+  background-color: #AAB7B8;
+}
+
+.bottomBar {
+  min-height: 150px;
+  max-height: 65px;
+  font-family: futura;
+  font-size: 18pt;
+  color: white;
+  align: center;
+  vertical-align: top;
+  padding-top: 25px;
+  background-color: #AAB7B8;
+}
+
+h1 {
+  align: center;
+}
+
+.select-city {
+  align: center;
+}
+
+.feckingswitch {
+  padding-top: 10px;
+  text-align: center;
+  align: center;
+  vertical-align: top;
+  width: 100%;
+}
+
+.onoffswitch {
+    margin: auto;
+    margin-bottom: 10px;
+    position: relative;; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #AAB7B8; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #52BE80; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EC7063; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #AAB7B8; border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
